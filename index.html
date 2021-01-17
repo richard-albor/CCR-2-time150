@@ -1,0 +1,664 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/reset.css" type="text/css" charset="utf-8" />
+
+    <link rel="stylesheet" href="css/main.css" type="text/css" charset="utf-8" />
+
+
+
+    <!-- Fontes -->
+
+
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+
+    <!-- Final Fontes -->
+
+
+
+    <!-- Favicon -->
+
+
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+
+
+    <!-- Final Favicon -->
+
+
+
+    <!-- Menu Mobile -->
+
+    <!-- Demo CSS file not needed for the plugin -->
+
+    <link rel="stylesheet" href="css-demo-page.css">
+
+    <!-- GRT Youtube Plugin CSS -->
+
+    <link rel="stylesheet" href="grt-responsive-menu.css">
+
+    <!-- Final Menu Mobile -->
+
+
+
+    <title>The Monetizer</title>
+
+</head>
+
+<body>
+
+    <div class="topo">
+
+        <a href="index.html">
+            <div class="logo"><img src="imagens/logo.png"></div>
+        </a>
+
+        <nav>
+
+            <ul>
+
+                <li><a href="index.html" class="ativo">HOME</a></li>
+
+                <li><a href="planos.html">PLANOS</a></li>
+
+                <li><a href="quem-somos.html">QUEM SOMOS</a></li>
+
+                <li><a href="contato.html">CONTATO</a></li>
+
+                <li><a href="login.html">LOGIN - ESTUDANTES</a></li>
+
+                <li><a href="login.html">LOGIN - INVESTIDORES</a></li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+    <div class="menu-responsivo">
+
+        <header>
+
+            <div class="menu-container">
+
+                <div class="grt-menu-row">
+
+                    <div class="grt-menu-logo">
+
+                        <a href="index.html" class="grt-logo"><img src="imagens/logo.png"></a>
+
+                    </div>
+
+                    <div class="grt-menu-right">
+
+                        <nav>
+
+                            <button class="grt-mobile-button"><span class="line1"></span><span
+                                    class="line2"></span><span class="line3"></span></button>
+
+                            <ul class="grt-menu">
+
+                                <li class="active"><a href="index.html">HOME</a></li>
+
+                                <li><a href="planos.html">PLANOS</a></li>
+
+                                <li><a href="quem-somos.html">QUEM SOMOS</a></li>
+
+                                <li><a href="contato.html">CONTATO</a></li>
+
+                                <li><a href="login.html">LOGIN - ESTUDANTE</a></li>
+                                <li><a href="login.html">LOGIN - INVESTIDOR</a></li>
+                            </ul>
+
+                        </nav>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+
+
+
+        <!-- Jquery -->
+
+        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+
+
+
+        <!-- Github button for demo page -->
+
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+
+
+        <!-- GRT Youtube Popup -->
+
+        <script src="grt-responsive-menu.js"></script>
+
+    </div>
+
+
+
+    <div class="slide-principal">
+
+        <!-- #region Jssor Slider Begin -->
+
+        <!-- Generator: Jssor Slider Maker -->
+
+        <!-- Source: https://www.jssor.com -->
+       
+
+        <script type="text/javascript" src="js/jssor.slider.min.js"></script>
+
+        <script type="text/javascript">
+
+            $(document).ready(function ($) {
+
+
+
+                var jssor_1_options = {
+
+                    $AutoPlay: 1,
+
+                    $SlideDuration: 800,
+
+                    $SlideEasing: $Jease$.$OutQuint,
+
+                    $ArrowNavigatorOptions: {
+
+                        $Class: $JssorArrowNavigator$
+
+                    },
+
+                    $BulletNavigatorOptions: {
+
+                        $Class: $JssorBulletNavigator$
+
+                    }
+
+                };
+
+
+
+                var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+
+
+                /*#region responsive code begin*/
+
+
+
+                var MAX_WIDTH = 3000;
+
+
+
+                function ScaleSlider() {
+
+                    var containerElement = jssor_1_slider.$Elmt.parentNode;
+
+                    var containerWidth = containerElement.clientWidth;
+
+
+
+                    if (containerWidth) {
+
+
+
+                        var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+
+
+                        jssor_1_slider.$ScaleWidth(expectedWidth);
+
+                    }
+
+                    else {
+
+                        window.setTimeout(ScaleSlider, 30);
+
+                    }
+
+                }
+
+
+
+                ScaleSlider();
+
+
+
+                $(window).bind("load", ScaleSlider);
+
+                $(window).bind("resize", ScaleSlider);
+
+                $(window).bind("orientationchange", ScaleSlider);
+
+                /*#endregion responsive code end*/
+
+            });
+
+        </script>
+
+        <style>
+            /*jssor slider loading skin spin css*/
+
+            .jssorl-009-spin img {
+
+                animation-name: jssorl-009-spin;
+
+                animation-duration: 1.6s;
+
+                animation-iteration-count: infinite;
+
+                animation-timing-function: linear;
+
+            }
+
+
+
+            @keyframes jssorl-009-spin {
+
+                from {
+                    transform: rotate(0deg);
+                }
+
+                to {
+                    transform: rotate(360deg);
+                }
+
+            }
+
+
+
+            /*jssor slider bullet skin 032 css*/
+
+            .jssorb032 {
+                position: absolute;
+            }
+
+            .jssorb032 .i {
+                position: absolute;
+                cursor: pointer;
+            }
+
+            .jssorb032 .i .b {
+                fill: #fff;
+                fill-opacity: 0.7;
+                stroke: #000;
+                stroke-width: 1200;
+                stroke-miterlimit: 10;
+                stroke-opacity: 0.25;
+            }
+
+            .jssorb032 .i:hover .b {
+                fill: #000;
+                fill-opacity: .6;
+                stroke: #fff;
+                stroke-opacity: .35;
+            }
+
+            .jssorb032 .iav .b {
+                fill: #000;
+                fill-opacity: 1;
+                stroke: #fff;
+                stroke-opacity: .35;
+            }
+
+            .jssorb032 .i.idn {
+                opacity: .3;
+            }
+
+
+
+            /*jssor slider arrow skin 051 css*/
+
+            .jssora051 {
+                display: block;
+                position: absolute;
+                cursor: pointer;
+            }
+
+            .jssora051 .a {
+                fill: none;
+                stroke: #fff;
+                stroke-width: 360;
+                stroke-miterlimit: 10;
+            }
+
+            .jssora051:hover {
+                opacity: .8;
+            }
+
+            .jssora051.jssora051dn {
+                opacity: .5;
+            }
+
+            .jssora051.jssora051ds {
+                opacity: .3;
+                pointer-events: none;
+            }
+        </style>
+
+        <div id="jssor_1"
+            style="position:relative;margin:0 auto;top:0px;left:0px;width:1300px;height:500px;overflow:hidden;visibility:hidden;">
+
+            <!-- Loading Screen -->
+
+            <div data-u="loading" class="jssorl-009-spin"
+                style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+
+                <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;"
+                    src="svg/loading/static-svg/spin.svg" />
+
+            </div>
+
+            <div data-u="slides"
+                style="cursor:default;position:relative;top:0px;left:0px;width:1300px;height:500px;overflow:hidden;">
+
+             
+
+                <div>
+
+                    <img data-u="image" src="imagens/banner-4.jpg" />
+
+                </div>
+
+               
+
+            </div>
+
+            <!-- Bullet Navigator -->
+
+            <div data-u="navigator" class="jssorb032" style="position:absolute;bottom:12px;right:12px;"
+                data-autocenter="1" data-scale="0.5" data-scale-bottom="0.75">
+
+                <div data-u="prototype" class="i" style="width:16px;height:16px;">
+
+                    <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+
+                        <circle class="b" cx="8000" cy="8000" r="5800"></circle>
+
+                    </svg>
+
+                </div>
+
+            </div>
+
+            <!-- Arrow Navigator -->
+
+            <div data-u="arrowleft" class="jssora051" style="width:65px;height:65px;top:0px;left:25px;"
+                data-autocenter="2" data-scale="0.75" data-scale-left="0.75">
+
+                <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+
+                    <polyline class="a" points="11040,1920 4960,8000 11040,14080 "></polyline>
+
+                </svg>
+
+            </div>
+
+            <div data-u="arrowright" class="jssora051" style="width:65px;height:65px;top:0px;right:25px;"
+                data-autocenter="2" data-scale="0.75" data-scale-right="0.75">
+
+                <svg viewBox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+
+                    <polyline class="a" points="4960,1920 11040,8000 4960,14080 "></polyline>
+
+                </svg>
+
+            </div>
+
+        </div>
+
+        <!-- #endregion Jssor Slider End -->
+
+    </div>
+
+
+
+
+
+    <!--    Planos aqui -->
+    <div class="produtos-home">
+
+        <h1>planos</h1>
+
+        <div class="area-produtos-home">
+
+            <div class="item-produtos-home">
+
+                <img src="imagens/produto-estudante.png">
+
+                <h4> Estudante</h4>
+
+                <p>Aqui neste plano tudo que você captar será usado livremente e você não terá obrigação futura de
+                    devolver os recursos</p>
+
+                <a href="" target="_blank">Estudante</a>
+
+            </div>
+
+            <div class="item-produtos-home">
+
+                <img src="imagens/produto-financiado.png">
+
+                <h4> Estudante Financiado</h4>
+
+                <p>Aqui neste plano o que você captar deverá ser devolvido após o período de trabalho. Tudo o valor será
+                    parcelado conforme opções disponibilizadas na plataforma</p>
+
+                <a href="" target="_blank">Estudante Financiado</a>
+
+            </div>
+
+            <div class="item-produtos-home">
+
+                <img src="imagens/produto-misto.png">
+
+                <h4>Misto</h4>
+
+                <p>Aqui neste plano você pode captar recursos tanto livremente quanto em caráter de recursos financiados
+                    por algum de nossos investidores</p>
+
+                <a href="" target="_blank">Misto</a>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <div class="sobre-home">
+
+        <div class="sobre-home-video">
+
+            <iframe class="video-estilo" src="https://www.youtube.com/embed/" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+
+        </div>
+
+        <div class="sobre-home-texto">
+
+            <h1>QUEM SOMOS</h1>
+
+            <p>A The Monetizer conecta pessoas que querem uma oportunidade no mercado de trabalho com pessoas que buscam
+                ajudar com algum ato de caridade e suas boas intenções, mas também com investidores que querem aplicar
+                seu capital na geração de emprego e renda e ter o devido retorno sobre seus recursos investidos!
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+
+    <!-- Benefícios aqui -->
+    <div class="planos-home-todo">
+
+        <div class="planos-home">
+
+            <div class="area-1">
+
+                <div class="item-plano-home borda-plano-1">
+
+                    <img src="imagens/icones-01.png">
+
+                    <div class="area-texto-plano">
+
+                        <h1>MÃE DE OBRA CAPACITADA</h1>
+
+                        <p>Os recursos captados são convertidos em tempo de trabalho e em experiência profissional para
+                            milhares de cidadãos brasileiros
+                            que buscam se tornar profissionais de eficiência e valor.</p>
+
+                        <a href="#">Veja mais</a>
+
+                    </div>
+
+                </div>
+
+                <div class="item-plano-home">
+
+                    <img src="imagens/icones-02.png">
+
+                    <div class="area-texto-plano">
+
+                        <h1>RETORNO SOBRE CAPITAL INVESTIDO</h1>
+
+                        <p>A plataforma possibilita que pessoas do mercado financeiro invistam em estudantes de talento
+                            e estes investidores obtenham
+                            os devidos lucros sobre os contratos futuros de capital investido.
+                        </p>
+
+                        <a href="#">Veja mais</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="borda-plano-2"></div>
+
+            <div class="area-1">
+
+                <div class="item-plano-home borda-plano-1">
+
+                    <img src="imagens/icones-03.png">
+
+                    <div class="area-texto-plano">
+
+                        <h1>CUIDAMOS DO QUE IMPORTA</h1>
+
+                        <p>Nossa plataforma gera emprego, renda e inclusão profissional para milhares de jovens.
+                            Contribuindo para gerar profissionais
+                            motivados que atuam e trabalham na área profissinal que sentem vocação para seguir.
+                        </p>
+
+                        <a href="#">Veja mais</a>
+
+                    </div>
+
+                </div>
+
+                <div class="item-plano-home">
+
+                    <img src="imagens/icones-04.png">
+
+                    <div class="area-texto-plano">
+
+                        <h1>UMA ECONOMIA MAIS FORTE</h1>
+
+                        <p>Nossa plataforma investi capital ocioso em geração de mão-de-obra capacitada, diminuindo o
+                            desemprego e aumentado
+                            a produtividade do trabalhador brasileiro.</p>
+
+                        <a href="#">Veja mais</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="area-bt">
+
+        <a href="#" target="_blank" class="botao-fale">Fale Conosco</a>
+
+    </div>
+
+
+
+    <div class="banner-texto">
+
+        <h1>Nossa missão é cuidar do seu futuro</h1>
+
+    </div>
+
+
+    
+
+    <!--     Rodapé aqui -->
+    <footer>
+
+        <div class="rodape-1">
+
+            <img src="imagens/logo-rodape.png">
+
+            <p>A The Monetizer conecta pessoas que querem uma oportunidade no mercado de trabalho com pessoas que buscam
+                ajudar com algum ato de caridade e suas boas intenções, mas também com investidores que querem aplicar
+                seu capital na geração de emprego e renda e ter o devido retorno
+                sobre seus recursos investidos!</p>
+
+        </div>
+
+        <div class="rodape-2">
+
+            <h1>Redes Sociais</h1>
+
+            <div class="area-icones">
+
+                <img src="imagens/face-rodape.png">
+
+                <img src="imagens/insta-rodape.png">
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
